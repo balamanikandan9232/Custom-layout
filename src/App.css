@@ -1,38 +1,123 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.Header {
+  width: 30%;
+  margin-top: 3rem;
+  line-height: 21px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  margin-bottom: 2rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: whitesmoke;
+}
+.search-bar {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  background-color: #fff;
+  padding: 10px;
+}
+.search-bar input {
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  margin-left: 1rem;
+  outline: none;
+}
+.search-bar .icon {
+  border: none;
+  background-color: transparent;
+  color: rgb(45, 42, 42);
+  cursor: pointer;
+  margin-left: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.item-container {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-container .item-title {
+  font-family: "Roboto", sans-serif;
+  margin: 0.2rem;
+  font-weight: 600;
+  font-size: 16px;
+}
+.card-header {
+  width: 70%;
+  display: flex;
+   font-size: 12px;
+  justify-content:flex-start;
+  margin-bottom: 0.3rem;
+ 
+  font-family: "roboto", sans-serif;
+}
+.card-header .card-h{
+  margin-top: 0.4rem;
+}
+.card-header .card-h::after{
+  max-width: 330px;
+ 
+}
+.card-container {
+  max-width: 668px;
+  min-height: 90vh;
+  display: flex;
+  background-color: #fff;
+  border: 3px solid linen;
+}
+.card-container .card {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap ;
+  background-color: whitesmoke;
+  justify-content: space-evenly;
+  overflow: hidden;
+  
+}
+.card-inner {
+  width: 30%;
+  display: flex;
+  overflow: hidden;
+  border-radius: 4px;
+  margin: 0.6rem;
+  background-color: aliceblue;
+  color: black;
+  line-height: 10px;
+  box-shadow: 2px 2px grey; 
+  overflow: hidden;
+  
+}
+.card-inner img {
+  width: 50%;
+margin-bottom: 4rem;
+object-fit: cover;
+}
+.card-title {
+  width: 50%;
+  margin-left: 0.5rem;
+  font-size: 10px;
+  margin-top: 2rem;
+  
 }
